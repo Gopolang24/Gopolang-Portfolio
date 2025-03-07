@@ -16,6 +16,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/favicon_io/site.webmanifest">
 
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 <body>
 
@@ -59,6 +62,82 @@
             </div>
         </section>
         <!--Home Section End-->
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">Have you any questions?</h3>
+                <h4 class="contact-sub-title padd-15">I AM VERY RESPONSIVE TO MESSAGES</h4>
+                
+                <!-- Contact Info -->
+                <div class="row">
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Me On</h4>
+                        <p><a href="tel:+27662305349">(+27) 66 230 5349</a></p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:pantsog24@gmail.com">pantsog24@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/gopolang-mmutlwane" target="_blank">linkedin.com/in/gopolang-mmutlwane</a></p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/Gopolang24" target="_blank">github.com/Gopolang24</a></p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="from_name" id="name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" name="from_email" id="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" placeholder="Message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="to_name" value="Gopolang">
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--About Section Start-->
         <section class="about section" id="about">
             <div class="container">
@@ -216,10 +295,10 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-mobile-alt"></i>
+                                <i class="fa fa-database"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Web design is the process of planning, creating, and maintaining websites.</p>
+                            <h4>Data Analysis</h4>
+                            <p>Transform raw data into actionable insights using Python, SQL, and statistical analysis to drive business decisions.</p>
                         </div>
                     </div>
                     <!---Service item End-->
@@ -228,10 +307,10 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-laptop-code"></i>
+                                <i class="fa fa-chart-line"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Web design is the process of planning, creating, and maintaining websites.</p>
+                            <h4>Business Intelligence</h4>
+                            <p>Create interactive dashboards and reports using PowerBI and Tableau for data-driven decision making.</p>
                         </div>
                     </div>
                     <!---Service item End-->
@@ -240,10 +319,10 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-palette"></i>
+                                <i class="fa fa-project-diagram"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Web design is the process of planning, creating, and maintaining websites.</p>
+                            <h4>Data Engineering</h4>
+                            <p>Design and implement data pipelines, ETL processes, and data warehousing solutions.</p>
                         </div>
                     </div>
                     <!---Service item End-->
@@ -252,10 +331,10 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-code"></i>
+                                <i class="fa fa-lightbulb"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Web design is the process of planning, creating, and maintaining websites.</p>
+                            <h4>Business Analysis</h4>
+                            <p>Bridge the gap between business needs and technical solutions through requirements gathering and process optimization.</p>
                         </div>
                     </div>
                     <!---Service item End-->
@@ -264,10 +343,10 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-search"></i>
+                                <i class="fa fa-code-branch"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Web design is the process of planning, creating, and maintaining websites.</p>
+                            <h4>Machine Learning</h4>
+                            <p>Develop and implement machine learning models for predictive analytics and pattern recognition.</p>
                         </div>
                     </div>
                     <!---Service item End-->
@@ -276,10 +355,10 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-bullhorn"></i>
+                                <i class="fa fa-file-excel"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Web design is the process of planning, creating, and maintaining websites.</p>
+                            <h4>Data Visualization</h4>
+                            <p>Create compelling visual stories from complex data using various visualization tools and techniques.</p>
                         </div>
                     </div>
                     <!---Service item End-->
@@ -298,15 +377,25 @@
                 </div>
                 <div class="row">
                     <div class="portfolio-heading padd-15">
-                        <h2> My Projects :</h2>
+                        <h2>My Projects :</h2>
                     </div>
                 </div>
                 <div class="row">
                     <!--Portfolio item start-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images/" alt="">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <i class="fa fa-chart-line fa-3x"></i>
+                                </div>
+                                <h4>Sales Analytics Dashboard</h4>
+                                <p>Interactive PowerBI dashboard analyzing sales trends and KPIs across multiple regions.</p>
+                                <div class="portfolio-tags">
+                                    <span>PowerBI</span>
+                                    <span>DAX</span>
+                                    <span>SQL</span>
+                                </div>
+                                <a href="https://github.com/Gopolang24" class="btn" target="_blank">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -315,8 +404,18 @@
                     <!--Portfolio item start-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images/" alt="">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <i class="fa fa-users fa-3x"></i>
+                                </div>
+                                <h4>Customer Segmentation Analysis</h4>
+                                <p>Python-based clustering analysis identifying key customer segments using machine learning.</p>
+                                <div class="portfolio-tags">
+                                    <span>Python</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Pandas</span>
+                                </div>
+                                <a href="https://github.com/Gopolang24" class="btn" target="_blank">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -325,8 +424,18 @@
                     <!--Portfolio item start-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images/" alt="">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <i class="fa fa-database fa-3x"></i>
+                                </div>
+                                <h4>Data Warehouse Design</h4>
+                                <p>Designed and implemented a retail analytics data warehouse using SQL and ETL processes.</p>
+                                <div class="portfolio-tags">
+                                    <span>SQL</span>
+                                    <span>ETL</span>
+                                    <span>Data Modeling</span>
+                                </div>
+                                <a href="https://github.com/Gopolang24" class="btn" target="_blank">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -335,8 +444,18 @@
                     <!--Portfolio item start-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images/" alt="">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <i class="fa fa-chart-bar fa-3x"></i>
+                                </div>
+                                <h4>Market Analysis Dashboard</h4>
+                                <p>Tableau visualization showcasing market trends and competitor analysis with interactive filters.</p>
+                                <div class="portfolio-tags">
+                                    <span>Tableau</span>
+                                    <span>Data Viz</span>
+                                    <span>Analytics</span>
+                                </div>
+                                <a href="https://github.com/Gopolang24" class="btn" target="_blank">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -345,8 +464,18 @@
                     <!--Portfolio item start-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images/" alt="">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <i class="fa fa-brain fa-3x"></i>
+                                </div>
+                                <h4>Predictive Analytics Model</h4>
+                                <p>Machine learning model for sales forecasting using time series analysis.</p>
+                                <div class="portfolio-tags">
+                                    <span>Python</span>
+                                    <span>ML</span>
+                                    <span>Statistics</span>
+                                </div>
+                                <a href="https://github.com/Gopolang24" class="btn" target="_blank">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -355,18 +484,18 @@
                     <!--Portfolio item start-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio item end-->
-
-                    <!--Portfolio item start-->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="frontend/assets/images/" alt="">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <i class="fa fa-cogs fa-3x"></i>
+                                </div>
+                                <h4>ETL Pipeline Development</h4>
+                                <p>Automated data pipeline for processing and analyzing financial data streams.</p>
+                                <div class="portfolio-tags">
+                                    <span>Python</span>
+                                    <span>SQL</span>
+                                    <span>Automation</span>
+                                </div>
+                                <a href="https://github.com/Gopolang24" class="btn" target="_blank">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -375,97 +504,6 @@
             </div>
         </section>
         <!--Portfolio Section End-->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
-                    </div>
-                </div>
-                <h3  class="contact-title padd-15">Have you any questions ?</h3>
-                <h4 class="contact-sub-title padd-15">I AM AT YOUR SERVICE</h4>
-                <div class="row">
-                    <!--Contact info start-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Call Me On</h4>
-                        <p><a href="tel:+27662305349">(+27) 66 230 5349</a></p>
-                    </div>
-                    <!--Contact info end-->
-
-                     <!--Contact info start-->
-                     <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:pantsog24@gmail.com?subject=Hello&body=Hi, I wanted to reach out...">pantsog24@gmail.com</a></p>
-                    </div>
-                    <!--Contact info end-->
-
-                     <!--Contact info start-->
-                     <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://www.linkedin.com/in/gopolang-mmutlwane" target="_blank">linkedin.com/in/gopolang-mmutlwane</a></p>
-                    </div>
-                    <!--Contact info end-->
-                    
-                    <!--Contact info start-->
-                  <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa-brands fa-github"></i></div>
-                    <h4>GitHub</h4>
-                    <p><a href="https://github.com/Gopolang24" target="_blank">github.com/Gopolang24</a>
-
-                </div>
-                <!--Contact info end-->
-                </div>
-                <h3  class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                <h4 class="contact-sub-title padd-15">I AM VERY RESPONSIVE TO MESSAGES</h4>
-         <!-- Contact Form -->
-<div class="row">
-    <div class="contact-form padd-15">
-        <form id="contactForm"> <!-- Add form tag and ID -->
-            <div class="row">
-                <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                        <input type="text" id="name" class="form-control" placeholder="Name" required autocomplete="name">
-                    </div>
-                </div>
-                <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                        <input type="email" id="email" class="form-control" placeholder="Email" required autocomplete="email">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                        <input type="text" id="subject" class="form-control" placeholder="Subject" required autocomplete="off">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                        <textarea id="message" class="form-control" placeholder="Message" required autocomplete="off"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
-                </div>
-            </div>
-        </form>
-        <!-- Success/Error Message Display -->
-        <p id="formMessage"></p>
-    </div>
-</div>
-
-            </div>
-        </section>
-        <!--Start Section Start-->
-        
-        <!--Start Section End-->
         </div>
         <!--Main Content End-->
     </div>
@@ -477,10 +515,12 @@
         </div>
     </div>
     <!--dark-mode End-->
-    <!--JS Files--> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--JS Files at the end of body--> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/frontend/assets/js/app.js"></script>
     <script src="/frontend/assets/js/darkmode.js"></script>
     <script src="/frontend/assets/js/contact_form.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
 
